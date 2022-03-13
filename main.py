@@ -14,7 +14,19 @@ def main():
     api_username = '__token__'
     api_key = os.environ["INPUT_SKYDERAAPIKEY"]
 
-    data = {}
+    github_ref_path = os.environ["GITHUB_REF"]
+
+    data = {
+        'my_input': os.environ["INPUT_MYINPUT"],
+        'github_base_ref': os.environ["GITHUB_BASE_REF"],
+        'github_ref_path': os.environ["GITHUB_REF"],
+        'github_pull_request_number': github_ref_path.split('/')[2],
+        'github_actor': os.environ["GITHUB_ACTOR"],
+        'github_event_name': os.environ["GITHUB_EVENT_NAME"],
+        'github_head_ref': os.environ["GITHUB_HEAD_REF"],
+        'gethub_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
+    }
+
     for k, v in sorted(os.environ.items()):
         print(k + ':', v)
         data[k] = v
