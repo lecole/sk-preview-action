@@ -14,7 +14,10 @@ def main():
     api_username = '__token__'
     api_key = os.environ["INPUT_SKYDERAAPIKEY"]
 
-    data = os.environ
+    data = {}
+    for k, v in sorted(os.environ.items()):
+        print(k + ':', v)
+        data[k] = v
 
     my_output = f"Hello {api_key}"
 
