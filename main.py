@@ -27,9 +27,9 @@ def main():
         'gethub_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
-    for k, v in sorted(os.environ.items()):
-        print(k + ':', v)
-        data[k] = v
+    # for k, v in sorted(os.environ.items()):
+    #     print(k + ':', v)
+    #     data[k] = v
 
     my_output = f"Hello {api_key}"
 
