@@ -32,6 +32,7 @@ jobs:
       # Put an example of your mandatory inputs here
       with:
         myInput: world
+        skyderaApiKey: xxx
 ```
 
 ### Inputs
@@ -77,6 +78,7 @@ steps:
   # Put an example of your mandatory arguments here
   with:
     myInput: world
+    skyderaApiKey: xxx
 
 # Put an example of using your outputs here
 - name: Check outputs
