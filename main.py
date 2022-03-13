@@ -18,6 +18,8 @@ def main():
 
     data = {
         'my_input': os.environ["INPUT_MYINPUT"],
+        'deploy_name': os.environ["INPUT_NAME"],
+
         'github_base_ref': os.environ["GITHUB_BASE_REF"],
         'github_ref_path': os.environ["GITHUB_REF"],
         'github_pull_request_number': github_ref_path.split('/')[2],
@@ -27,9 +29,9 @@ def main():
         'gethub_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
-    for k, v in sorted(os.environ.items()):
-        print(k + ':', v)
-        data[k] = v
+    # for k, v in sorted(os.environ.items()):
+    #     print(k + ':', v)
+    #     data[k] = v
 
     my_output = f"Hello {api_key}"
 
