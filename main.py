@@ -4,7 +4,7 @@ import requests  # noqa We are just importing this to prove the dependency insta
 
 
 def main():
-    skydera_url = 'https://e5lhgjpuw2.execute-api.us-east-2.amazonaws.com/infra/deploy/preview'
+    skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/deploy/preview'
 
     headers = {
         'Content-Type': 'application/json',
