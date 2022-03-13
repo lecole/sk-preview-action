@@ -9,7 +9,7 @@ jobs:
         id: selftest
 
         # Put your action repo here
-        uses: lecole/sk-preview-action@master
+        uses: lecole/sk-preview-action@main
 
       - name: Check outputs
         run: |
