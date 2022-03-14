@@ -19,6 +19,7 @@ def main():
         'app_def_id': os.environ["INPUT_SKYAPPDEFID"],
         'namespace': os.environ["INPUT_SKYNAMESPACE"],
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
+        'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
 
 
         'github_base_ref': os.environ["GITHUB_BASE_REF"],
