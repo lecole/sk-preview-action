@@ -16,7 +16,8 @@ def main():
 
     data = {
         'name': os.environ["INPUT_NAME"],
-        'region': os.environ["INPUT_REGION"],
+        'app_def_id': os.environ["INPUT_SKYAPPDEFID"],
+        'namespace': os.environ["INPUT_SKYNAMESPACE"],
         'git_intg_access_key': os.environ["INPUT_SKYGITINTGACCESSKEY"],
 
         'github_base_ref': os.environ["GITHUB_BASE_REF"],
