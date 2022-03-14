@@ -20,6 +20,7 @@ def main():
         'namespace': os.environ["INPUT_SKYNAMESPACE"],
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
 
+
         'github_base_ref': os.environ["GITHUB_BASE_REF"],
         'github_pull_request_number': os.environ["GITHUB_REF"].split('/')[2],
         'github_actor': os.environ["GITHUB_ACTOR"],
