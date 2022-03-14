@@ -12,7 +12,7 @@ def main():
     }
 
     api_username = '__token__'
-    api_key = os.environ["INPUT_SKYDERAAPIKEY"]
+    api_key = os.environ["INPUT_SKYAPIKEY"]
 
     data = {
         'name': os.environ["INPUT_NAME"],
