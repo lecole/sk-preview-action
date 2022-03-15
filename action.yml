@@ -19,7 +19,7 @@ inputs:
     required: true
   prNumber:
     description: "Pull request number"
-    required: false
+    required: true
     default: ${{ github.event.number }}
 outputs:
   myOutput:
