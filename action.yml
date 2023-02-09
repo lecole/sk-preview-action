@@ -14,6 +14,9 @@ inputs:
   skyGitRepoSlug:
     description: "Application slug ID for the preview application"
     required: true
+  skyAppDefId:
+    description: "Application catalog Id"
+    required: true
   skyApiKey:
     description: "Skydera API key"
     required: true
