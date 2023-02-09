@@ -17,6 +17,9 @@ inputs:
   skyApiKey:
     description: "Skydera API key"
     required: true
+  skyCertId:
+    description: "SSL Cert Id"
+    required: true
   prNumber:
     description: "Pull request number"
     required: true

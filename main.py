@@ -4,7 +4,8 @@ import requests
 
 
 def main():
-    skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/deploy'
+    # skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/deploy'
+    skydera_url = 'https://api-git.skydera.com/infra/preview/deploy'
 
     headers = {
         'Content-Type': 'application/json',
@@ -18,6 +19,7 @@ def main():
         'name': os.environ["INPUT_NAME"],
         'app_def_id': os.environ["INPUT_SKYAPPDEFID"],
         'namespace': os.environ["INPUT_SKYNAMESPACE"],
+        'cert_id': os.environ["INPUT_SKYCERTID"],
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
         'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
 
@@ -30,8 +32,8 @@ def main():
         'gh_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
-    for k, v in data.items():
-        print(k, v)
+    # for k, v in data.items():
+    #     print(k, v)
 
     query_data = requests.post(
         skydera_url,
