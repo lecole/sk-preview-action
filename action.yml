@@ -20,9 +20,6 @@ inputs:
   skyApiKey:
     description: "Skydera API key"
     required: true
-  skyAppRegion:
-    description: "Application deploy region"
-    required: true
   skyCertId:
     description: "SSL Cert Id"
     required: true
