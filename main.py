@@ -20,6 +20,7 @@ def main():
         'app_def_id': os.environ["INPUT_SKYAPPDEFID"],
         'namespace': os.environ["INPUT_SKYNAMESPACE"],
         'cert_id': os.environ["INPUT_SKYCERTID"],
+        'region': os.environ["INPUT_SKYAPPREGION"],
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
         'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
 
