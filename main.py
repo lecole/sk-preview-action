@@ -12,6 +12,8 @@ def main():
         'Accept': 'application/json'
     }
 
+    print('os.environ', os.environ)
+
     api_username = '__token__'
     api_key = os.environ["INPUT_SKYAPIKEY"]
 
